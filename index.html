@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <title>Sport Club Corinthians Paulista</title>
+</head>
+<body>
+   <section class="slider">
+      <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+            <div class="slide-box primeiro">
+               <img class="img-deskktop" src="/assets/img/neo_quimica_arena.jpg" alt="slide 1">
+            </div>
+            <div class="slide-box">
+               <img class="img-deskktop" src="/assets/img/mundial.png" alt="slide 2">
+            </div>
+            <div class="slide-box">
+               <img class="img-deskktop" src="/assets/img/titulos.jpg" alt="slide 3">
+            </div>
+            <div class="nav-auto">
+               <div class="auto-btn1"></div>
+               <div class="auto-btn2"></div>
+               <div class="auto-btn3"></div>
+            </div>
+            <div class="nav-manual">
+               <label for="radio1" class="manual-btn"></label>
+               <label for="radio2" class="manual-btn"></label>
+               <label for="radio3" class="manual-btn"></label>
+            </div>
+   </div>
+   </section>
+   <section class="container">
+      <div class="header-content">
+            <h1>Sport Club Corinthians Paulista</h1>
+            <h2 class="container__title">Louco por Ti, Corinthians</h2>
+      </div>
+      <article>
+            <div class="card__product">
+               <img src="assets/img/corinthians.png" alt="image" class="card__img">
+               <div>
+                  <h3 class="card__name">Cadastrar</h3>
+                  <span class="card__price">Nova Partida</span>
+               </div>
+            </div>
+            <div class="modal">
+               <div class="modal__card">
+                  <i class="ri-close-large-line modal__close"></i>
+                  <img src="assets/img/corinthians.png" alt="image" class="modal__img">
+                  <div>
+                        <form id="userForm">
+                           <div>
+                              <label for="adversario">Adversário:</label>
+                              <input type="text" id="adversario" name="adversario" required>
+                           </div>
+                           <div>
+                              <label for="campeonato">Campeonato:</label>
+                              <select id="campeonato" name="campeonato" required>
+                                    <option value="Brasileirao">Brasileirão</option>
+                                    <option value="Copa do Brasil">Copa do Brasil</option>
+                                    <option value="Sul Americana">Sul Americana</option>
+                              </select>
+                           </div>
+                           <div>
+                              <label for="data">Data:</label>
+                              <input type="date" id="data" name="data" required>
+                           </div>
+                           <div class="radio-group">
+                              <label for="neoQuimica">
+                                    <input type="radio" id="neoQuimica" name="local" value="Neo Quimica Arena" required>
+                                    Neo Química Arena
+                              </label>
+                              <label for="visitante">
+                                    <input type="radio" id="visitante" name="local" value="Visitante" required>
+                                    Visitante
+                              </label>
+                           </div>
+                           <div>
+                              <input type="submit" id="botao-cadastrar" value="Salvar">
+                           </div>
+                        </form>
+                  </div>
+               </div>
+            </div>
+      </article>
+      <h2 class="container__title">Partidas do Timão</h2>
+      <section id="listadepartidas"></section>
+      <h2 class="container__title">Elenco</h2>
+      <div class="card__container">
+            <article>
+               <div class="card__product">
+                  <img src="assets/img/professorhete.png" alt="image" class="card__img">
+                  <div>
+                        <h3 class="card__name">Hete Caetano (C)</h3>
+                        <span class="card__price">Professor e Capitão</span>
+                  </div>
+               </div>
+               <div class="modal">
+                  <div class="modal__card">
+                        <i class="ri-close-large-line modal__close"></i>
+                        <img src="assets/img/professorhete.png" alt="image" class="modal__img">
+                        <div>
+                           <h3 class="modal__name">Hete Caetano (C)</h3>
+                           <p class="modal__info">Altura: 1,85 Idade: 20 anos</p>
+                           <span class="modal__price">Professor e Capitão</span>
+                        </div>
+                  </div>
+               </div>
+            </article>
+            <article>
+               <div class="card__product">
+                  <img src="assets/img/hugosouza.png" alt="image" class="card__img">
+                  <div>
+                        <h3 class="card__name">Hugo Souza</h3>
+                        <span class="card__price">Goleiro</span>
+                  </div>
+               </div>
+               <div class="modal">
+                  <div class="modal__card">
+                        <i class="ri-close-large-line modal__close"></i>
+                        <img src="assets/img/hugosouza.png" alt="image" class="modal__img">
+                        <div>
+                           <h3 class="modal__name">Hugo Souza</h3>
+                           <p class="modal__info">Altura: 1,96 Idade: 25 anos</p>
+                           <span class="modal__price">Goleiro</span>
+                        </div>
+                  </div>
+               </div>
+            </article>
+            <article>
+               <div class="card__product">
+                  <img src="assets/img/fagner.png" alt="image" class="card__img">
+                  <div>
+                        <h3 class="card__name">Fagner</h3>
+                        <span class="card__price">Lateral</span>
+                  </div>
+               </div>
+               <div class="modal">
+                  <div class="modal__card">
+                        <i class="ri-close-large-line modal__close"></i>
+                        <img src="assets/img/fagner.png" alt="image" class="modal__img">
+                        <div>
+                           <h3 class="modal__name">Fagner</h3>
+                           <p class="modal__info">Altura: 1,68 Idade: 35 anos</p>
+                           <span class="modal__price">Lateral</span>
+                        </div>
+                  </div>
+               </div>
+            </article>
+            <article>
+               <div class="card__product">
+                  <img src="assets/img/andreramalho.png" alt="image" class="card__img">
+                  <div>
+                        <h3 class="card__name">Andre Ramalho</h3>
+                        <span class="card__price">Zagueiro</span>
+                  </div>
+               </div>
+               <div class="modal">
+                  <div class="modal__card">
+                        <i class="ri-close-large-line modal__close"></i>
+                        <img src="assets/img/andreramalho.png" alt="image" class="modal__img">
+                        <div>
+                           <h3 class="modal__name">Andre Ramalho</h3>
+                           <p class="modal__info">Altura: 1,82 Idade: 32 anos</p>
+                           <span class="modal__price">Zagueiro</span>
+                        </div>
+                  </div>
+               </div>
+            </article>
+            <article>
+               <div class="card__product">
+                  <img src="assets/img/felixtorres.png" alt="image" class="card__img">
+                  <div>
+                        <h3 class="card__name">Felix Torres</h3>
+                        <span class="card__price">Zagueiro</span>
+                  </div>
+               </div>
+               <div class="modal">
+                  <div class="modal__card">
+                        <i class="ri-close-large-line modal__close"></i>
+                        <img src="assets/img/felixtorres.png" alt="image" class="modal__img">
+                        <div>
+                           <h3 class="modal__name">Felix Torres</h3>
+                           <p class="modal__info">Altura: 1,87 Idade: 27 anos</p>
+                           <span class="modal__price">Zagueiro</span>
+                        </div>
+                  </div>
+               </div>
+            </article>
+            <article>
+               <div class="card__product">
+                  <img src="assets/img/hugo.png" alt="image" class="card__img">
+                  <div>
+                     <h3 class="card__name">Hugo</h3>
+                     <span class="card__price">Lateral</span>
+                  </div>
+               </div>
+               <div class="modal">
+                  <div class="modal__card">
+                     <i class="ri-close-large-line modal__close"></i>
+
+                     <img src="assets/img/hugo.png" alt="image" class="modal__img">
+
+                     <div>
+                        <h3 class="modal__name">Hugo</h3>
+                        <p class="modal__info">
+                           Altura: 1,79
+                           Idade: 27 anos
+                        </p>
+                        <span class="modal__price">Lateral</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+
+            <article>
+               <div class="card__product">
+                  <img src="assets/img/josemartinez.png" alt="image" class="card__img">
+                  <div>
+                     <h3 class="card__name">Jose Martinez</h3>
+                     <span class="card__price">Meia</span>
+                  </div>
+               </div>
+
+               <div class="modal">
+                  <div class="modal__card">
+                     <i class="ri-close-large-line modal__close"></i>
+
+                     <img src="assets/img/josemartinez.png" alt="image" class="modal__img">
+
+                     <div>
+                        <h3 class="modal__name">Jose Martinez</h3>
+                        <p class="modal__info">
+                           Altura: 1,86
+                           Idade: 30 anos
+                        </p>
+                        <span class="modal__price">Meia</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+
+            <article>
+               <div class="card__product">
+                  <img src="assets/img/andrecarrillo.png" alt="image" class="card__img">
+                  <div>
+                     <h3 class="card__name">Andre Carrillo</h3>
+                     <span class="card__price">Meia</span>
+                  </div>
+               </div>
+
+               <div class="modal">
+                  <div class="modal__card">
+                     <i class="ri-close-large-line modal__close"></i>
+
+                     <img src="assets/img/andrecarrillo.png" alt="image" class="modal__img">
+
+                     <div>
+                        <h3 class="modal__name">Andre Carrillo</h3>
+                        <p class="modal__info">
+                           Altura: 1,80
+                           Idade: 33 anos
+                        </p>
+                        <span class="modal__price">Meia</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+               <div class="card__product">
+                  <img src="assets/img/igorcoronado.png" alt="image" class="card__img">
+   
+                  <div>
+                     <h3 class="card__name">Igor Coronado</h3>
+                     <span class="card__price">Meia</span>
+                  </div>
+               </div>
+
+               <div class="modal">
+                  <div class="modal__card">
+                     <i class="ri-close-large-line modal__close"></i>
+
+                     <img src="assets/img/igorcoronado.png" alt="image" class="modal__img">
+
+                     <div>
+                        <h3 class="modal__name">Igor Coronado</h3>
+                        <p class="modal__info">
+                           Altura: 1,70
+                           Idade: 32 anos
+                        </p>
+                        <span class="modal__price">Meia</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+
+            <article>
+               <div class="card__product">
+                  <img src="assets/img/rodrigogarro.png" alt="image" class="card__img">
+   
+                  <div>
+                     <h3 class="card__name">Rodrigo Garro</h3>
+                     <span class="card__price">Meia</span>
+                  </div>
+               </div>
+
+               <div class="modal">
+                  <div class="modal__card">
+                     <i class="ri-close-large-line modal__close"></i>
+
+                     <img src="assets/img/rodrigogarro.png" alt="image" class="modal__img">
+
+                     <div>
+                        <h3 class="modal__name">Rodrigo Garro</h3>
+                        <p class="modal__info">
+                           Altura: 1,74
+                           Idade: 26 anos
+                        </p>
+                        <span class="modal__price">Meia</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+
+            <article>
+               <div class="card__product">
+                  <img src="assets/img/memphisdepay.png" alt="image" class="card__img">
+   
+                  <div>
+                     <h3 class="card__name">Memphis Depay</h3>
+                     <span class="card__price">Atacante</span>
+                  </div>
+               </div>
+
+               <div class="modal">
+                  <div class="modal__card">
+                     <i class="ri-close-large-line modal__close"></i>
+
+                     <img src="assets/img/memphisdepay.png" alt="image" class="modal__img">
+
+                     <div>
+                        <h3 class="modal__name">Memphis Depay</h3>
+                        <p class="modal__info">
+                           Altura: 1,78
+                           Idade: 30 anos
+                        </p>
+                        <span class="modal__price">Atacante</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+            <article>
+               <div class="card__product">
+                  <img src="assets/img/romero.png" alt="image" class="card__img">
+   
+                  <div>
+                     <h3 class="card__name">Angel Romero</h3>
+                     <span class="card__price">Atacante</span>
+                  </div>
+               </div>
+
+               <div class="modal">
+                  <div class="modal__card">
+                     <i class="ri-close-large-line modal__close"></i>
+
+                     <img src="assets/img/romero.png" alt="image" class="modal__img">
+
+                     <div>
+                        <h3 class="modal__name">Angel Romero</h3>
+                        <p class="modal__info">
+                           Altura: 1,75
+                           Idade: 32 anos
+                        </p>
+                        <span class="modal__price">Atacante</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+
+            <article>
+               <div class="card__product">
+                  <img src="assets/img/yurialberto.png" alt="image" class="card__img">
+   
+                  <div>
+                     <h3 class="card__name">Yuri Alberto</h3>
+                     <span class="card__price">Atacante</span>
+                  </div>
+               </div>
+
+               <div class="modal">
+                  <div class="modal__card">
+                     <i class="ri-close-large-line modal__close"></i>
+
+                     <img src="assets/img/yurialberto.png" alt="image" class="modal__img">
+
+                     <div>
+                        <h3 class="modal__name">Yuri Alberto</h3>
+                        <p class="modal__info">
+                           Altura: 1,82
+                           Idade: 23 anos
+                        </p>
+                        <span class="modal__price">Atacante</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+
+            <article>
+               <div class="card__product">
+                  <img src="assets/img/tallesmagno.png" alt="image" class="card__img">
+   
+                  <div>
+                     <h3 class="card__name">Talles Magno</h3>
+                     <span class="card__price">Atacante</span>
+                  </div>
+               </div>
+
+               <div class="modal">
+                  <div class="modal__card">
+                     <i class="ri-close-large-line modal__close"></i>
+
+                     <img src="assets/img/tallesmagno.png" alt="image" class="modal__img">
+
+                     <div>
+                        <h3 class="modal__name">TalleAtacante</h3>
+                        <p class="modal__info">
+                           Altura: 1,86
+                           Idade: 22 anos
+                        </p>
+                        <span class="modal__price">Atacante</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+
+            <article>
+               <div class="card__product">
+                  <img src="assets/img/pedroraul.png" alt="image" class="card__img">
+   
+                  <div>
+                     <h3 class="card__name">Pedro Raul</h3>
+                     <span class="card__price">Atacante</span>
+                  </div>
+               </div>
+
+               <div class="modal">
+                  <div class="modal__card">
+                     <i class="ri-close-large-line modal__close"></i>
+
+                     <img src="assets/img/pedroraul.png" alt="image" class="modal__img">
+
+                     <div>
+                        <h3 class="modal__name">Pedro Raul</h3>
+                        <p class="modal__info">
+                           Altura: 1,93
+                           Idade: 27 anos
+                        </p>
+                        <span class="modal__price">Atacante</span>
+                     </div>
+                  </div>
+               </div>
+            </article>
+
+
+
+
+
+
+
+         </div>
+      </section>
+      
+      <script src="assets/js/main.js"></script>
+      <script src="/assets/js/cadastrar.js"></script>
+      <script src="/assets/js/carregar.js"></script>
+      <script src="/assets/js/apagar.js"></script>
+   </body>
+</html>
